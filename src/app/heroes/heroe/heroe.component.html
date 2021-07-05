@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heroe</title>
+</head>
+<body>
+  <h1>{{nombre}}</h1>
+
+  <dl>
+    <td> Nombre: </td>
+    <dd> {{nombre}} </dd>
+
+    <td> Edad: </td>
+    <dd> {{edad}} </dd>
+
+    <td> Función: </td>
+    <dd> {{obtenerNombre()}} </dd>
+
+    <td> Mayúsculas: </td>
+    <dd> {{nombre.toUpperCase()}} </dd>
+
+    <td> Nombre con GETTER Mayúsculas: </td>
+    <dd> {{nombreMayusculas}} </dd>
+  </dl>
+
+  <button (click)="cambiarNombre()">
+    Cambiar Héroe
+  </button>
+
+  <button (click)="cambiarEdad(20)">
+    Cambiar Edad
+  </button>
+</body>
+</html>
